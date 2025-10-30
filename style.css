@@ -1,0 +1,99 @@
+:root {
+    --bg: #000000;
+    /* arka plan: siyah */
+    --card: #3a3a3a;
+    /* çerçeve (kart): gri */
+    --accent: #4f46e5;
+    --muted: #d1d5db;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    background: var(--bg);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    color: #fff;
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    background: var(--card);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    margin: 0 0 12px 0;
+    font-size: 20px;
+    color: #fff
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-size: 14px;
+    color: var(--muted)
+}
+
+input[type=date] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #555;
+    background: #222;
+    color: #fff
+}
+
+.buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px
+}
+
+button {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 0;
+    background: var(--accent);
+    color: #fff;
+    cursor: pointer
+}
+
+button#clear {
+    background: #333;
+    color: #fff;
+    border: 1px solid #444
+}
+
+.result {
+    margin-top: 16px;
+    font-size: 18px;
+    color: #fff
+}
+
+.err {
+    color: #f87171
+}
+
+footer {
+    margin-top: 14px;
+    color: var(--muted);
+    font-size: 12px;
+    text-align: right
+}
+
+@media (max-width:520px) {
+    .card {
+        padding: 16px
+    }
+}

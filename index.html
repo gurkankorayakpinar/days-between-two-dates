@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>İki Tarih Arasındaki Gün Sayısı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="card">
+        <h1>İki Tarih Arasındaki Gün Sayısı</h1>
+
+        <label>
+            Başlangıç tarihi
+            <input id="date1" type="date" />
+        </label>
+
+        <label>
+            Bitiş tarihi
+            <input id="date2" type="date" />
+        </label>
+
+        <div class="buttons">
+            <button id="calc">Hesapla</button>
+            <button id="clear">Temizle</button>
+        </div>
+
+        <div id="result" aria-live="polite" class="result"></div>
+
+        <footer>
+            <small>Düzenleyen: Gürkan Koray Akpınar</small>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
